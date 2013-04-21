@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PluginConfig>
+    <Id>556</Id>
+    <Name>Khazad Mithril ABC player</Name>
+    <Version>1.4</Version>
+    <Author>Queekusme</Author>
+    <InfoUrl>http://www.lotrointerface.com/downloads/info556</InfoUrl>
+    <DownloadUrl>http://www.lotrointerface.com/downloads/download556</DownloadUrl>
+    <Descriptors>
+        <descriptor>QueekusPlugins\KMABC.plugin</descriptor>
+    </Descriptors>
+    <Dependencies>
+		<dependency>0</dependency>
+    </Dependencies>
+</PluginConfig>

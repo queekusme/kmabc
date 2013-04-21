@@ -1,0 +1,89 @@
+BODY
+{
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+H1
+{
+    FONT-SIZE: 24pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial;
+    TEXT-DECORATION: underline
+}
+H2
+{
+    FONT-SIZE: 18pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial;
+    TEXT-DECORATION: underline
+}
+H3
+{
+    FONT-SIZE: 14pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial;
+    TEXT-DECORATION: underline
+}
+TABLE
+{
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+INPUT
+{
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+SELECT
+{
+    FONT-SIZE: 12pt;
+    COLOR: navy;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+A
+{
+    FONT-SIZE: 12pt;
+    COLOR: blue;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+.rowover
+{
+    BEHAVIOR: url(rowover_js.htc);
+    ro--hover-color: Navy;
+    ro--hover-background: LemonChiffon;
+    ro--selected-color: White;
+    ro--selected-background: Navy
+}
+A:visited
+{
+    FONT-SIZE: 12pt;
+    COLOR: purple;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+A:hover
+{
+    FONT-SIZE: 12pt;
+    COLOR: red;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+P.InverseText
+{
+    FONT-SIZE: medium;
+    COLOR: yellow;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+A.InverseHyperlink
+{
+    FONT-SIZE: 12pt;
+    COLOR: yellow;
+    FONT-FAMILY: 'Times New Roman', Arial
+}
+TD.InverseTableText
+{
+    FONT-SIZE: 12pt;
+    COLOR: yellow;
+    FONT-FAMILY: 'Times New Roman', Arial
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>My YYYYYYY Web Site</title>
+<link rel="stylesheet" type="text/css" href="Default.css">
+</head>
+
+<body bgColor="powderblue">
+<font size="+1" color="Black">
+<B><H3>kmapi.addToTable()</H3></B>
+<P>
+<TABLE Border=1>
+<TR>
+	<TD>TYPE</TD>
+	<TD>USAGE</TD>
+	<TD>EXAMPLE</TD>
+</TR>
+<TR>
+	<TD>Colour</TD>
+	<TD>kmapi.addToTable( "colour", String name, Table colours )</TD>
+	<TD>kmapi.addToTable( "colour", "Space Oddosy", SO )</TD>
+</TR>
+<TR>
+	<TD>Language</TD>
+	<TD>kmapi.addToTable( "language", String name, Int ModID ;</TD>
+	<TD>kmapi.addToTable( "language", "Space Oddosy", ModID )</TD>
+</TR>
+<TR>
+	<TD>Buttons</TD>
+	<TD>kmapi.addToTable( "buttons", String name, Table buttons )</TD>
+	<TD>kmapi.addToTable( "buttons", "Space Oddosy", space_oddosy_buttons )</TD>
+</TR>
+</TABLE>
+<P>
+String Name is the name which appears in the listbox on the options menu pannel.<P>
+Table colours and Table buttons are both tables that contain the data needed to display the correct colour scheme or buttons for your modification.<P>
+ModID is the id of your mod, gathered by using: kmapi.getNextFreeId()
+<P>
+An example for both could be:<BR>
+space_oddosy_buttons =	{<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.lyricalbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.lyricalhover, <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.compactbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.compacthover,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.musicbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.musichover,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playhover,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playstartbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playstarthover,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playsyncbasic,<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modpath ..identifyer ..button.playsynchover<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<P>
+As long as you supply a unique identifyer variable, this code should work for any modification.<BR>
+<BR>
+SO = {	0.1, 0.2, 0.3,&nbsp;&nbsp;&nbsp;&nbsp;- RGB for: Notebox<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.4, 0.5, 0.6,&nbsp;&nbsp;&nbsp;&nbsp;- RGB for: All other Controls<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.7, 0.8, 0.9 };&nbsp;- RGB for: Buttons<P>
+
+There are some other calls, however these have been made simpler by using other calls. an example of this is "package". This adds a button to the package list, however there are other parts necessary, so I made a seperate function for you to use.
+<P>
+<H1>REMEMBER, I HAVE GIVEN YOU A DEMO MOD SO THAT YOU CAN SEE HOW EVERYTHING SHOULD WORK</H1>
+</font>

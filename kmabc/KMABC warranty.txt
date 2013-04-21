@@ -1,0 +1,13 @@
+1) You use this plug-in at your own discretion.
+
+2) I, Queekus Plugins, take NO responsibility for ANY damages done to your copy of LOTRO or any of your content within the Lotro Game.
+
+3) This plug-in is given as is and may contain bugs. Should you encounter any of these feel free to follow the contact info so that I can rectify it.
+
+4) Kmabc and Queekus Plugins are no way linked to Turbine and any of their affiliates! And they should not be contacted with regards to any of Kmabc's bugs. This does not include any problems with LOTRO itself and should Kmabc cause any long term problems to the Lotro client then you should re-install and any remaining in game problems can then be addressed to them.
+
+5) The Lotro lua system is still considered Beta and is not complete and therefore may have bugs itself, these can be confusing so contact me for any bugs and I will then direct you to Turbine if that bug is not down to me!
+
+6) Any attempt to modify Kmabc without prior lua knowledge will result in it breaking. It is recommended that you read some of the Turbine lua documentation and other lua documentation before trying to use any of the KMAPI features.
+
+7) I repeat that it is YOUR decision to use this and you MAY NOT claim any damages against Queekusme or Turbine for its use!

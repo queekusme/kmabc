@@ -1,0 +1,89 @@
+<html>
+<head></title>
+<link rel="stylesheet" type="text/css" href="Default.css">
+</head>
+<body bgColor="powderblue">
+<font size="+3" color="green">
+<U>GET STARTED</U>
+</font>
+<font size="+1" color="blue">
+<P>
+Thankyou for wanting to try the KMAPI api for KMABC.<P>
+
+The following pages on the left show all of the functions that can be called using kmabc and contain some examples on how to use them.
+<P>
+There is a demonstration modification that you can use to see how to get started. this is enclosed in the: "DEMOMOD.zip".<BR>
+Extract this into the folder it is in and run the "KmabcModInstaller.exe" executable.
+<P>
+<P>
+Unlike version 1.3, all future versions of kmapi will support the following format:
+<PRE>
+[mod_*.zip]
+	| -- [mod_***.lua]
+	| -- [modInstall.istl]
+	| -- [mods required image files]
+</PRE>
+Once extracted, run the "KmabcModInstaller.exe" executable. to install the modification.
+
+When starting a mod, the first file you need to crerate is the mod_*.lua<BR>
+where the * is the name of your mod.
+
+enter the following lines into the mod:
+<P>
+<FONT SIZE="+1" COLOR="black">import "QueekusPlugins.kmabc.kmapi";</FONT> -- This is important else you wont have access to the api features
+<P>
+<FONT SIZE="+1" COLOR="black">identifyer = "xxx";</FONT> -- This is required for adding buttons and other features. it is a good practice to name the * in the mod_*.lua this too.
+<P>
+<FONT SIZE="+1" COLOR="black">ModID = kmapi.getNextFreeId()</FONT> -- This allows you to have a unique id for your mod that none of the others will have.
+<P>
+After adding this, add these lines:<BR>
+<FONT SIZE="+1" COLOR="black"><B><PRE>* = 	{ -- Where * is the name of your mod
+		loadmod = function()
+		end
+	}</PRE></B></FONT>
+<P>
+This is where all of your calls go. See the "DEMOMOD.zip" file's mod_*.lua file to see how to use them
+<P>
+The second file you will need is the "modInstall.istl" file.
+<P>
+In here, put the following:<P>
+<FONT SIZE="+1" COLOR="black">xxx</FONT> -- where xxx is the full name of your mod. This appears in the installer and not in the plugin.<BR> 
+<FONT SIZE="+1" COLOR="black">*</FONT> -- Where * is the name of your mod<BR>
+<FONT SIZE="+1" COLOR="black">
+import "QueekusPlugins.kmabc.*";</FONT> -- Where * is the name of your mod
+<P>
+FOR REFERENCE, HERE ARE THE 2 FILES YOU HAVE CREATED IN FULL:
+<P>
+<B>mod_xxx.lua</B>
+<TABLE Border = 1>
+<TR>
+	<TD><PRE>import "QueekusPlugins.kmabc.kmapi";
+identifyer = "xxx";
+ModID = kmapi.getNextFreeId()
+
+xxx = 	{
+		loadmod = function()
+		end
+	}
+</PRE></TD>
+</TR>
+</table>
+<P>
+<B>modInstall.istl</B>
+<TABLE Border = 1>
+<TR>
+	<TD><PRE>xxx The Mod For KMABC
+xxx
+import "QueekusPlugins.kmabc.mod_xxx";</PRE></TD>
+</TR>
+</TABLE>
+<P>
+The rest is upto you, add colours, languages, buttons and have fun.
+<P>
+if you need any help, contact me on lotrointerface via "Queekusme" without quotes<BR>
+or on the Withywindle server, Charname: Feladion
+</font>
+</body>
+</html>
+
+</html>

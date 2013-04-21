@@ -1,0 +1,22 @@
+<kmabc_Mods>
+	<mod_1>
+		<mod_Name>2001 A Space Oddesy</mod_Name>
+		<mod_Description>A mod for Kmabc that gives the plugin a look similar to the A Space Oddesy</mod_Description>
+		<mod_Author>Queekusme</mod_Author>
+		<mod_Version>1.0</mod_Version>
+		<mod_DATA>
+			<mod_loadModLine>SpaceOddesy</mod_loadModLine>
+			<mod_Import>QueekusPlugins.kmabc.mod_spaceoddosy</mod_Import>
+		</mod_DATA>
+	</mod_1>
+	<mod_x>
+		<mod_Name></mod_Name>
+		<mod_Description></mod_Description>
+		<mod_Author></mod_Author>
+		<mod_Version></mod_Version>
+		<mod_DATA>
+			<mod_loadModLine></mod_loadModLine>
+			<mod_Import></mod_Import>
+		</mod_DATA>
+	</mod_x>
+</kmabc_Mods>

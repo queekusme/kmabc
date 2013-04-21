@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+  <Information>
+    <Name>KMABC</Name>
+    <Author>Queekusme</Author>
+    <Version>1.4 - Beta</Version>
+    <Description>Kmabc is a plugin designed to make playing music easier by having: quickslots for instruments, recently played songs / playlits and many other features!</Description>
+    <Image>QueekusPlugins\kmabc\icon.jpg</Image>
+  </Information>
+  <Package>QueekusPlugins.kmabc.Main</Package>
+</Plugin>
