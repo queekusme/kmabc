@@ -88,14 +88,13 @@ OPTIONS MENU:
 			• More can be added using kmapi.
 
 LANGUAGE SYSTEM REWRITE:
-
-	• Renamed all P#num tags to L[#num] where #num is a number - [NOT DONE YET]
+	
 	• Language loading has been compressed to decrease file size
 	• Removed language lines 23 and 42 as they were unused
 
 CHOOSE RANDOM SONG:
 
-	• New button "(R)" on UI next to Recently Played Songs label - [NOT DONE YET]
+	
 
 MOD INSTALLER EXECUTABLE (BETA) (WINDOWS ONLY ATM):
 
@@ -121,3 +120,9 @@ NOTICES:
 		• keeps the previous colour used in the songs list for some reason
 	• Button images are not saved, they need to be reloaded manually 
 		• If I don't have a patch for this then hopefully it will be in 1.5
+
+TO DO STILL:
+
+	• kmapi.getCurrentLanguageID()
+	• New button "(R)" on UI next to Recently Played Songs label
+	• Renamed all P#num tags to L[#num] where #num is a number - [NOT DONE YET]
