@@ -89,7 +89,7 @@ OPTIONS MENU:
 
 LANGUAGE SYSTEM REWRITE:
 
-	• Renamed all P(#num) tags to L[#num] - [NOT DONE YET]
+	• Renamed all P#num tags to L[#num] where #num is a number - [NOT DONE YET]
 	• Language loading has been compressed to decrease file size
 	• Removed language lines 23 and 42 as they were unused
 
