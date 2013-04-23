@@ -95,7 +95,7 @@
 			"file": "kmabc/options.lua",
 			"settings":
 			{
-				"buffer_size": 10008,
+				"buffer_size": 7331,
 				"line_ending": "Windows"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 1654,
+				"buffer_size": 5188,
 				"line_ending": "Windows"
 			}
 		}
@@ -136,6 +136,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Michael/AppData/Roaming/.minecraft/versions/2.0/2.0.json",
+		"/C/Users/Michael/AppData/Roaming/.minecraft/versions/1.5.1Modded/2.0.json",
+		"/C/Users/Michael/AppData/Roaming/.minecraft/versions/1.5.1/1.5.1.json",
+		"/C/Users/Michael/AppData/Roaming/.minecraft/versions/1.5.1Modded/1.5.1.json",
+		"/C/Users/Michael/Downloads/kmabc-master/README.md",
+		"/C/Program Files/Git/libexec/git-core/mergetools/p4merge",
 		"/C/Users/Michael/Documents/The Lord of the Rings Online/Plugins/QueekusPlugins/kmabc/options.lua",
 		"/C/Users/Michael/Documents/The Lord of the Rings Online/Plugins/QueekusPlugins/KhazadMithrilABCplayer.plugincompendium",
 		"/C/Users/Michael/Documents/The Lord of the Rings Online/Plugins/QueekusPlugins/kmabc/kmapi.lua",
@@ -449,7 +455,7 @@
 					"file": "kmabc/options.lua",
 					"settings":
 					{
-						"buffer_size": 10008,
+						"buffer_size": 7331,
 						"regions":
 						{
 						},
@@ -476,7 +482,7 @@
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 1654,
+						"buffer_size": 5188,
 						"regions":
 						{
 						},
@@ -493,7 +499,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -31,6 +31,8 @@ IMPORTANT:
 	• Saving And Loading Changes
 	• Chat Commands
 	• Options Menu
+	• Language System Rewrite
+	• Choose Random Song
 	• Mod Installer Executable (BETA) (WINDOWS ONLY ATM)
 	• Notices
 	• Known Issues
@@ -84,6 +86,16 @@ OPTIONS MENU:
 		• Packages
 			• This lets you specify which Package you want to use. Packages contain colours, languages and/or buttons. 
 			• More can be added using kmapi.
+
+LANGUAGE SYSTEM REWRITE:
+
+	• Renamed all P(#num) tags to L[#num] - [NOT DONE YET]
+	• Language loading has been compressed to decrease file size
+	• Removed language lines 23 and 42 as they were unused
+
+CHOOSE RANDOM SONG:
+
+	• New button "(R)" on UI next to Recently Played Songs label - [NOT DONE YET]
 
 MOD INSTALLER EXECUTABLE (BETA) (WINDOWS ONLY ATM):
 
