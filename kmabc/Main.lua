@@ -61,7 +61,7 @@ UdateScreen = function (sender, args)
 		window = Turbine.UI.Lotro.Window();
 		window:SetPosition( 350, 100 );
 		window:SetSize( 418, 443 );
-		window:SetText( ""..P1 .."1.4");
+		window:SetText( ""..L[1] .."1.4");
 		window:SetVisible( true );
 		window:SetOpacity( "1" );
 		window.MouseEnter = function(sender, args)
@@ -72,7 +72,7 @@ UdateScreen = function (sender, args)
 		label:SetPosition( 31, 34 );
 		label:SetSize( 158, 15 );
 		label:SetBackColor( Turbine.UI.Color(  0.0, 0.05, 1.0 ) );
-		label:SetText( ""..P24 );
+		label:SetText( ""..L[24] );
 		label:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		label:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
 		Copywrite = Turbine.UI.Label();
@@ -81,7 +81,7 @@ UdateScreen = function (sender, args)
 		Copywrite:SetPosition( 50, 418 );
 		Copywrite:SetSize( 318, 15 );
 		Copywrite:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
-		Copywrite:SetText( ""..P3 );
+		Copywrite:SetText( ""..L[3]);
 		Copywrite:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		Copywrite:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
 		label1 = Turbine.UI.TextBox();
@@ -90,7 +90,7 @@ UdateScreen = function (sender, args)
 		label1:SetPosition( 10, 92 );
 		label1:SetSize( 118, 38 );
 		label1:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
-		label1:SetText( ""..P4 );
+		label1:SetText( ""..L[4] );
 		label1:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		label1:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
 		label2 = Turbine.UI.TextBox();
@@ -99,7 +99,7 @@ UdateScreen = function (sender, args)
 		label2:SetPosition( 130, 92 );
 		label2:SetSize( 78, 38 );
 		label2:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
-		label2:SetText( ""..P5 );
+		label2:SetText( ""..L[5] );
 		label2:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		label2:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
 		quickslot1 = Turbine.UI.Lotro.Quickslot()
@@ -194,7 +194,7 @@ UdateScreen = function (sender, args)
 		end
 		quickslotlyrical.MouseUp = function(sender , args)
 			if (LyricalIsChecked == true) then
-				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P20) )
+				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[20]) )
 				Turbine.PluginManager.LoadPlugin("Lyrical");
 				lyricalIsLoaded = true
 			end
@@ -206,21 +206,21 @@ UdateScreen = function (sender, args)
 		quickslotSP:SetParent( window );
 		quickslotSP:SetPosition( 330, 92 );
 		quickslotSP:SetSize( 38, 38 );
-		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText() .." " ..P10) )
+		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText() .." " ..L[10]) )
 		quickslotSP:SetAllowDrop(true);
 		quickslotSP:SetBackColor( Turbine.UI.Color( 0.0, 0.15, 1.0 ) );
 		quickslotPS = Turbine.UI.Lotro.Quickslot()
 		quickslotPS:SetParent( window );
 		quickslotPS:SetPosition( 370, 92 );
 		quickslotPS:SetSize( 38, 38 );
-		quickslotPS:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P7) )
+		quickslotPS:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[7]) )
 		quickslotPS:SetAllowDrop(true);
 		quickslotPS:SetBackColor( Turbine.UI.Color( 0.0, 0.15, 1.0 ) );
 		quickslotP = Turbine.UI.Lotro.Quickslot()
 		quickslotP:SetParent( window );
 		quickslotP:SetPosition( 290, 92 );
 		quickslotP:SetSize( 38, 38 );
-		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText()) )
+		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText()) )
 		quickslotP:SetAllowDrop(true);
 		quickslotP:SetBackColor( Turbine.UI.Color( 0.0, 0.15, 1.0 ) );
 		quickslotMM = Turbine.UI.Lotro.Quickslot()
@@ -228,7 +228,7 @@ UdateScreen = function (sender, args)
 		quickslotMM:SetPosition( 250, 92 );
 		quickslotMM:SetSize( 38, 38 );
 		quickslotMM:SetZOrder(100);
-		quickslotMM:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P8) )
+		quickslotMM:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[8]) )
 		quickslotMM:SetAllowDrop(true);
 		quickslotMM:SetBackColor( Turbine.UI.Color( 0.0, 0.15, 1.0 ) );
 		compactQuicks = Turbine.UI.Lotro.Quickslot()
@@ -236,7 +236,7 @@ UdateScreen = function (sender, args)
 		compactQuicks:SetPosition( 210, 92 );
 		compactQuicks:SetSize( 38, 38 );
 		compactQuicks:SetZOrder(100);
-		compactQuicks:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P9) )
+		compactQuicks:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[9]) )
 		compactQuicks:SetAllowDrop(true);
 		compactQuicks:SetBackColor( Turbine.UI.Color( 0.0, 0.15, 1.0 ) );
 		compactcontrol = Turbine.UI.Control();
@@ -304,7 +304,7 @@ UdateScreen = function (sender, args)
 		Notes:SetPosition( 211, 132 );
 		Notes:SetSize( 197, 284 );
 		Notes:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
-		Notes:SetText( ""..P11 );
+		Notes:SetText( ""..L[11] );
 		Notes:SetTextAlignment( Turbine.UI.ContentAlignment.TopLeft );
 		sidebar = Turbine.UI.Lotro.ScrollBar();
 		sidebar:SetOrientation( Turbine.UI.Orientation.Vertical );
@@ -318,7 +318,7 @@ UdateScreen = function (sender, args)
 		PlistName:SetPosition( 10, 132 );
 		PlistName:SetSize( 198, 20 );
 		PlistName:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
-		PlistName:SetText( ""..P19 );
+		PlistName:SetText( ""..L[19] );
 		PlistName:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		PlistName:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
 		listbox = Turbine.UI.ListBox();
@@ -341,7 +341,7 @@ UdateScreen = function (sender, args)
 					allow = false
 				end
 			end		
-			if (songname == ""..P4) then
+			if (songname == ""..L[4]) then
 				allow = false
 			end
 			if (allow == true) then
@@ -372,7 +372,7 @@ UdateScreen = function (sender, args)
 		local songname = "";
 		quickslotMM.MouseEnter = function( sender , args )                               --/Music*
 			musicIcon:SetBackground("QueekusPlugins/kmabc/MusicHoverIcon.tga");
-			if (label2:GetText() == ""..P5 ) then
+			if (label2:GetText() == ""..L[5] ) then
 				label2:SetText( "1" );
 			else	
 			end
@@ -382,10 +382,10 @@ UdateScreen = function (sender, args)
 			musicIcon:SetBackground("QueekusPlugins/kmabc/MusicBasicIcon.tga");
 		end
 		quickslotP.MouseEnter = function(sender, args)                               --/Play
-			quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText() .." " ..P10 ))
-			quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText()) )
+			quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText() .." " ..L[10] ))
+			quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText()) )
 			playIcon:SetBackground("QueekusPlugins/kmabc/PlayHoverIcon.tga");
-			if (label2:GetText() == ""..P5 ) then
+			if (label2:GetText() == ""..L[5] ) then
 				label2:SetText( "1" );	
 			end	
 			addtoListBox();
@@ -395,7 +395,7 @@ UdateScreen = function (sender, args)
 		end
 		quickslotPS.MouseEnter = function( sender , args )                               --/PlayStart*
 			PlayStartIcon:SetBackground("QueekusPlugins/kmabc/PlaystartHoverIcon.tga");
-			if (label2:GetText() == ""..P5 ) then
+			if (label2:GetText() == ""..L[5] ) then
 				label2:SetText( "1" );
 			end
 			addtoListBox();
@@ -404,10 +404,10 @@ UdateScreen = function (sender, args)
 			PlayStartIcon:SetBackground("QueekusPlugins/kmabc/PlaystartBasicIcon.tga");
 		end
 		quickslotSP.MouseEnter = function( sender , args )                               --/SyncPlay
-			quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText() .." " ..P10 ))
-			quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText()) )
+			quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText() .." " ..L[10] ))
+			quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText()) )
 			PlaySyncIcon:SetBackground("QueekusPlugins/kmabc/PlaySyncHoverIcon.tga");
-			if (label2:GetText() == ""..P5 ) then
+			if (label2:GetText() == ""..L[5] ) then
 				label2:SetText( "1" );		
 			end		
 			addtoListBox();
@@ -541,7 +541,7 @@ UdateScreen = function (sender, args)
 			savedataTHD.positionX=X;
 			savedataTHD.positionY=Y;
 				Turbine.PluginData.Save(Turbine.DataScope.Character, "KmabcSaveData", savedataTHD); 
-			Turbine.Shell.WriteLine("KMABC: "..P21 .." 100%");
+			Turbine.Shell.WriteLine("KMABC: "..L[21] .." 100%");
 		end
 		Load.Click = function( sender , args )
 			pcall(function() langnum = savedataTHD.CurrentLanguage end);
@@ -589,7 +589,7 @@ UdateScreen = function (sender, args)
 			pcall(
 				function()
 					if (savedataTHD.lyricalQslotSavData.Data == nil) then
-						quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P2) )	
+						quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[2]) )	
 					else
 						local quickslotlyricalLoad = Turbine.UI.Lotro.Shortcut();
 						quickslotlyricalLoad:SetData(savedataTHD.lyricalQslotSavData.Data)
@@ -655,7 +655,7 @@ UdateScreen = function (sender, args)
 			pcall(function() compactcontrol:SetBackColor( Turbine.UI.Color( savedataTHD.compactcontrolColourSave.R, savedataTHD.compactcontrolColourSave.G, savedataTHD.compactcontrolColourSave.B )) end); 	
 			pcall(function() quickslotlyrical:SetBackColor(Turbine.UI.Color( savedataTHD.quickslotLyricalColourSave.R, savedataTHD.quickslotLyricalColourSave.G, savedataTHD.quickslotLyricalColourSave.B )) end);
 			pcall(function() listbox:SetBackColor( Turbine.UI.Color( savedataTHD.listboxcolour.R, savedataTHD.listboxcolour.G, savedataTHD.listboxcolour.B ) ) end);			
-			Turbine.Shell.WriteLine("KMABC: "..P22 .." 100%");
+			Turbine.Shell.WriteLine("KMABC: "..L[22] .." 100%");
 			isLoaded = true;
 			--UdateScreen();
 			Save.Click();
@@ -698,19 +698,19 @@ defaultbuttons =	{
 				button_playsync_basic = "QueekusPlugins/kmabc/PlaySyncBasicIcon.tga";
 				button_playsync_hover = "QueekusPlugins/kmabc/PlaySyncHoverIcon.tga";
 			}
-kmapi.addToTable( "colour", ""..P38); -- Title Text
-kmapi.addToTable( "colour", ""..P43, blue );
-kmapi.addToTable( "colour", ""..P44, red);
-kmapi.addToTable( "colour", ""..P45, grey);
-kmapi.addToTable( "colour", ""..P46, violet);
-kmapi.addToTable( "colour", ""..P47, brown);
-kmapi.addToTable( "colour", ""..P48);
-kmapi.addToTable( "language", ""..P39); -- Title Text
+kmapi.addToTable( "colour", ""..L[38]); -- Title Text
+kmapi.addToTable( "colour", ""..L[43], blue );
+kmapi.addToTable( "colour", ""..L[44], red);
+kmapi.addToTable( "colour", ""..L[45], grey);
+kmapi.addToTable( "colour", ""..L[46], violet);
+kmapi.addToTable( "colour", ""..L[47], brown);
+kmapi.addToTable( "colour", ""..L[48]);
+kmapi.addToTable( "language", ""..L[39]); -- Title Text
 kmapi.addToTable( "language", "English", "1");
 kmapi.addToTable( "language", "Fran\195\167ais", "2");
 kmapi.addToTable( "language", "Deutsch", "3");
-kmapi.addToTable( "buttons", ""..P52); -- Title Text
-kmapi.addToTable( "buttons", ""..P54);
-kmapi.addToTable( "package", ""..P53); -- Title Text
+kmapi.addToTable( "buttons", ""..L[52]); -- Title Text
+kmapi.addToTable( "buttons", ""..L[54]);
+kmapi.addToTable( "package", ""..L[53]); -- Title Text
 end
 UdateScreen();

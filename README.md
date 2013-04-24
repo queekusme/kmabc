@@ -50,6 +50,7 @@ KMAPI CHANGES:
 		• kmapi.getNextFreeId()
 		• kmapi.getSongs()
 		• kmapi.getNumOfSongs()
+		• kmapi.getCurrentLanguageID()
 
 SAVING AND LOADING CHANGES:
 
@@ -90,6 +91,7 @@ OPTIONS MENU:
 LANGUAGE SYSTEM REWRITE:
 	
 	• Language loading has been compressed to decrease file size
+	• Renamed all P#num tags to L[#num] where #num is a number
 	• Removed language lines 23 and 42 as they were unused
 
 CHOOSE RANDOM SONG:
@@ -123,6 +125,4 @@ NOTICES:
 
 TO DO STILL:
 
-	• kmapi.getCurrentLanguageID()
 	• New button "(R)" on UI next to Recently Played Songs label
-	• Renamed all P#num tags to L[#num] where #num is a number - [NOT DONE YET]

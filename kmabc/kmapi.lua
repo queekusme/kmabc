@@ -110,7 +110,7 @@ buttons = function (doThis)
 	local songname = "";
 	quickslotMM.MouseEnter = function( sender , args )                               --/Music*
 		musicIcon:SetBackground(doThis[6])
-		if (label2:GetText() == ""..P5 ) then
+		if (label2:GetText() == ""..L[5] ) then
 			label2:SetText( "1" );	
 		end	
 		addtoListBox();
@@ -119,10 +119,10 @@ buttons = function (doThis)
 		musicIcon:SetBackground(doThis[5]);
 	end
 	quickslotP.MouseEnter = function(sender, args)                               --/Play
-		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText() .." " ..P10 ))
-		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText()) )
+		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText() .." " ..L[10] ))
+		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText()) )
 		playIcon:SetBackground(doThis[8]);
-		if (label2:GetText() == ""..P5 ) then
+		if (label2:GetText() == ""..L[5] ) then
 			label2:SetText( "1" );
 		end	
 		addtoListBox();
@@ -132,7 +132,7 @@ buttons = function (doThis)
 	end
 	quickslotPS.MouseEnter = function( sender , args )                               --/PlayStart*
 		PlayStartIcon:SetBackground(doThis[10]);
-		if (label2:GetText() == ""..P5 ) then
+		if (label2:GetText() == ""..L[5] ) then
 			label2:SetText( "1" );
 		end	
 		addtoListBox();
@@ -141,10 +141,10 @@ buttons = function (doThis)
 		PlayStartIcon:SetBackground(doThis[9]);
 	end
 	quickslotSP.MouseEnter = function( sender , args )                               --/SyncPlay
-		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText() .." " ..P10 ))
-		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P6 .." " ..label1:GetText() .." " ..label2:GetText()) )
+		quickslotSP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText() .." " ..L[10] ))
+		quickslotP:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[6] .." " ..label1:GetText() .." " ..label2:GetText()) )
 		PlaySyncIcon:SetBackground(doThis[12]);
-		if (label2:GetText() == ""..P5 ) then
+		if (label2:GetText() == ""..L[5] ) then
 			label2:SetText( "1" );
 		else	
 		end	
@@ -180,10 +180,10 @@ kmapi = {
 			listItem:SetForeColor( Turbine.UI.Color(  1.0, 1.0, 1.0 ) );
 			if boxName == "colour" then
 				if doThis == nil then
-					if stringName == ""..P38 then
+					if stringName == ""..L[38] then
 							listItem:SetForeColor( Turbine.UI.Color(  0.5, 1.0, 1.0 ) );
 					end
-					if stringName == ""..P42 then
+					if stringName == ""..L[42] then
 							listItem:SetForeColor( Turbine.UI.Color(  1.0, 0.5, 1.0 ) );
 							listItem:SetSize( 150, 45 );
 					end
@@ -200,10 +200,10 @@ kmapi = {
 				ColourLBox:AddItem( listItem );
 			elseif boxName == "language" then
 				if doThis == nil then
-					if stringName == ""..P39 then
+					if stringName == ""..L[39] then
 							listItem:SetForeColor( Turbine.UI.Color(  0.5, 1.0, 1.0 ) );
 					end
-					if stringName == ""..P23 then
+					if stringName == ""..L[23] then
 							listItem:SetForeColor( Turbine.UI.Color(  1.0, 0.5, 1.0 ) );
 							listItem:SetSize( 150, 60 );
 					end
@@ -232,10 +232,10 @@ kmapi = {
 				LanguageLBox:AddItem( listItem );
 			elseif boxName == "buttons" then
 				if doThis == nil then
-					if stringName == ""..P52 then
+					if stringName == ""..L[52] then
 							listItem:SetForeColor( Turbine.UI.Color(  0.5, 1.0, 1.0 ) );
 					end
-					if stringName == ""..P54 then
+					if stringName == ""..L[54] then
 							listItem.MouseClick = function(sender , args)				
 								UdateScreen()
 								butConfig = "default";
@@ -250,7 +250,7 @@ kmapi = {
 				end
 				ButtonsLBox:AddItem( listItem );
 			elseif boxName == "package" then
-				if stringName == ""..P53 then
+				if stringName == ""..L[53] then
 					listItem:SetForeColor( Turbine.UI.Color(  0.5, 1.0, 1.0 ) );
 				else
 					listItem.MouseClick = function(sender , args)
@@ -327,5 +327,8 @@ kmapi = {
 		getNextFreeId = function()
 			numberoflangs = numberoflangs + 1
 			return ("" ..numberoflangs)
+		end,
+		getCurrentLanguageID = function()
+			return Langnum;
 		end
 	};

@@ -125,8 +125,8 @@ end
 function language(i)
 	langnum = i
 	
-	for i = 1, numoflangLines do
-		pcall( function() L[i] = Lang[i][i] end);
+	for b = 1, numoflangLines do
+		pcall( function() L[b] = Lang[i][b] end);
 	end
 end
 
@@ -156,17 +156,17 @@ function optLang(i)
 
 	language(i)
 
-	Title:SetText( ""..P37 );
+	Title:SetText( ""..L[37] );
 
-	LyricalBCheck:SetText(" "..P41);  
+	LyricalBCheck:SetText(" "..L[41]);  
 	
-	clrQuickslots:SetText(""..P49); 
-	clrSongList:SetText(""..P51); 
-	AllowSongs:SetText(" "..P18); 
+	clrQuickslots:SetText(""..L[49]); 
+	clrSongList:SetText(""..L[51]); 
+	AllowSongs:SetText(" "..L[18]); 
 	
 	clrQuickslots.MouseEnter = function(sender, args)
 		
-		Confirmation1:SetText(""..P50)
+		Confirmation1:SetText(""..L[50])
 
 	end
 
@@ -188,11 +188,11 @@ function optLang(i)
 		quickslot8:SetShortcut( Turbine.UI.Lotro.Shortcut(  ) );
 		quickslot9:SetShortcut( Turbine.UI.Lotro.Shortcut(  ) );
 
-		if quickslotlyrical:GetShortcut():GetData() == P2 then
+		if quickslotlyrical:GetShortcut():GetData() == L[2] then
 
 		else
 
-			if quickslotlyrical:GetShortcut():GetData() == P20 then
+			if quickslotlyrical:GetShortcut():GetData() == L[20] then
 
 			else
 				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut(  ) );
@@ -204,7 +204,7 @@ function optLang(i)
 
 	clrSongList.MouseEnter = function(sender, args)
 		
-		Confirmation2:SetText(""..P50)
+		Confirmation2:SetText(""..L[50])
 
 	end
 
@@ -246,11 +246,11 @@ function optLang(i)
 			
 			if (lyricalIsLoaded == true) then
 
-				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P20) )
+				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[20]) )
 			
 			else
 					
-				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..P2) )
+				quickslotlyrical:SetShortcut( Turbine.UI.Lotro.Shortcut( Turbine.UI.Lotro.ShortcutType.Alias, ""..L[2]) )
 
 			end
 		

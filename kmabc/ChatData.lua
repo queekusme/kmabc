@@ -3,21 +3,21 @@ kmabcCommand = Turbine.ShellCommand();
 Turbine.Shell.AddCommand("kmabc",kmabcCommand);
 
 function kmabcCommand:GetShortHelp()	--/help in chat
-	return "usage: "..P16;
+	return "usage: "..L[16];
 end
 
 function kmabcCommand:Execute( command, arguments)
 
-	if (arguments==""..P26) then
+	if (arguments==""..L[26]) then
 		window:SetVisible( true )
 
-	elseif (arguments==""..P27) then
+	elseif (arguments==""..L[27]) then
 		window:SetVisible( false )
 
-	elseif (arguments==""..P28) then
+	elseif (arguments==""..L[28]) then
 		window:SetVisible(not window:IsVisible());
 
-	elseif (arguments==""..P29) then
+	elseif (arguments==""..L[29]) then
 		Notes:SetVisible(not Notes:IsVisible());
 		sidebar:SetVisible(not sidebar:IsVisible());
 
@@ -37,7 +37,7 @@ function kmabcCommand:Execute( command, arguments)
 
 		end
 
-	elseif (arguments==""..P30) then
+	elseif (arguments==""..L[30]) then
 		PlistItem2:SetText("");
 		PlistItem3:SetText("");
 		PlistItem4:SetText("");
@@ -50,19 +50,19 @@ function kmabcCommand:Execute( command, arguments)
 		PlistItem11:SetText("");
 		PlistItem12:SetText("");
 		PlistItem13:SetText("");
-		Turbine.Shell.WriteLine(""..P25);
+		Turbine.Shell.WriteLine(""..L[25]);
 
 	elseif (arguments=="") then
 		Turbine.Shell.WriteLine("");
 		Turbine.Shell.WriteLine("------------------------------------");
-		Turbine.Shell.WriteLine(""..P13 );
+		Turbine.Shell.WriteLine(""..L[13] );
 		Turbine.Shell.WriteLine("------------------------------------");
-		Turbine.Shell.WriteLine(""..P14 );
+		Turbine.Shell.WriteLine(""..L[14] );
 		Turbine.Shell.WriteLine("------------------------------------");
-		Turbine.Shell.WriteLine(""..P15 );
-		Turbine.Shell.WriteLine(""..P16 );
+		Turbine.Shell.WriteLine(""..L[15] );
+		Turbine.Shell.WriteLine(""..L[16] );
 		Turbine.Shell.WriteLine("------------------------------------");
-		Turbine.Shell.WriteLine(""..P17 );
+		Turbine.Shell.WriteLine(""..L[17] );
 		Turbine.Shell.WriteLine("------------------------------------");
 		Turbine.Shell.WriteLine("");
 	end
