@@ -106,7 +106,7 @@ MOD INSTALLER EXECUTABLE (BETA) (WINDOWS ONLY ATM):
 
 NOTICES:
 
-	• Language pack makers, the language strings 31 -> 36 are blank and should not contain any data!
+	• Language pack makers, the language strings 31 -> 36 and 42 are blank and should not contain any data!
 		• This is indicated in LangData.lua under the english language pack ONLY for your convenience
 		• Should you mod Kmabc, feel free to use these lines as required, however changing the base files outside of those specified is not reccomended unless you know what you are doing
 	• The code in the Main.lua has been compressed to (hopefully) decrease file size
