@@ -53,6 +53,7 @@ ColRbow = function() -- Custom rainbow colour scheme
 	LyricalIcon:SetBackColor( Turbine.UI.Color(  1.0, 1.0, 0.25 ) ); --Yellow
 	PlistName:SetBackColor( Turbine.UI.Color( 0.0, 1.0, 0.0) );
 	listbox:SetBackColor( Turbine.UI.Color( 1.0, 0.0, 0.0 ) );
+	rSong:SetBackColor( Turbine.UI.Color( 1.0, 1.0, 0.25  ) );
 	for i=1, listbox:GetItemCount() do
 		local currentItem = listbox:GetItem(i);  
 		currentItem:SetBackColor( Turbine.UI.Color( math.random(), math.random(), math.random() ) );
@@ -92,6 +93,7 @@ doColour = function (nR, nG, nB, r, g, b, rShift, gShift, bShift) -- normal doCo
 	LyricalIcon:SetBackColor( Turbine.UI.Color(  rShift,  gShift, bShift ) );
 	PlistName:SetBackColor( Turbine.UI.Color( r, g, b ) );
 	listbox:SetBackColor( Turbine.UI.Color( r, g, b ) );
+	rSong:SetBackColor( Turbine.UI.Color( r, g, b ) );
 	for i=1, listbox:GetItemCount() do
 		local currentItem = listbox:GetItem(i);  
 		currentItem:SetBackColor( Turbine.UI.Color( r, g, b ) );

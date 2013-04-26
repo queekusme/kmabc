@@ -316,16 +316,27 @@ UdateScreen = function (sender, args)
 		PlistName = Turbine.UI.Label();
 		PlistName:SetParent( window );
 		PlistName:SetPosition( 10, 132 );
-		PlistName:SetSize( 198, 20 );
+		PlistName:SetSize( 168, 20 );
 		PlistName:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
 		PlistName:SetText( ""..L[19] );
 		PlistName:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
 		PlistName:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
+		rSong = Turbine.UI.Button();
+		rSong:SetParent( window );
+		rSong:SetPosition( 180, 132 );
+		rSong:SetSize( 28, 20 );
+		rSong:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0 ) );
+		rSong:SetText( ""..L[23] );
+		rSong:SetTextAlignment( Turbine.UI.ContentAlignment.MiddleCenter );
+		rSong:SetForeColor( Turbine.UI.Color(  0.0, 0.0, 0.0 ) );
+		rSong.Click = function( sender, args ) -- RandomSong
+	    	label1:SetText(listbox:GetItem(math.random(listbox:GetItemCount())):GetText())
+	    end
 		listbox = Turbine.UI.ListBox();
 		listbox:SetParent( window );
 		listbox:SetBackColor( Turbine.UI.Color( 0.0, 0.05, 1.0) );
-		listbox:SetPosition( 11, 155 );
-		listbox:SetSize( 197, 261 );
+		listbox:SetPosition( 10, 155 );
+		listbox:SetSize( 198, 261 );
 		function addtoListBox()			
 			songname = label1:GetText();
 			currentlistboxitems = {};			
@@ -494,6 +505,7 @@ UdateScreen = function (sender, args)
 					PlaySyncIconColourSave = PlaySyncIcon:GetBackColor();
 					LyricalIconColourSave = LyricalIcon:GetBackColor();
 					compactcontrolColourSave = compactcontrol:GetBackColor();
+					rSongColourSave = rSong:GetBackColor();
 					positionX = 0;
 					positionY = 0;
 					AllowSongsFromMods = AllowSongs:IsChecked();
@@ -655,6 +667,8 @@ UdateScreen = function (sender, args)
 			pcall(function() compactcontrol:SetBackColor( Turbine.UI.Color( savedataTHD.compactcontrolColourSave.R, savedataTHD.compactcontrolColourSave.G, savedataTHD.compactcontrolColourSave.B )) end); 	
 			pcall(function() quickslotlyrical:SetBackColor(Turbine.UI.Color( savedataTHD.quickslotLyricalColourSave.R, savedataTHD.quickslotLyricalColourSave.G, savedataTHD.quickslotLyricalColourSave.B )) end);
 			pcall(function() listbox:SetBackColor( Turbine.UI.Color( savedataTHD.listboxcolour.R, savedataTHD.listboxcolour.G, savedataTHD.listboxcolour.B ) ) end);			
+			pcall(function() rSong:SetBackColor( Turbine.UI.Color( savedataTHD.rSongColourSave.R, savedataTHD.rSongColourSave.G, savedataTHD.rSongColourSave.B ) ) end);			
+			
 			Turbine.Shell.WriteLine("KMABC: "..L[22] .." 100%");
 			isLoaded = true;
 			--UdateScreen();

@@ -92,11 +92,13 @@ LANGUAGE SYSTEM REWRITE:
 	
 	• Language loading has been compressed to decrease file size
 	• Renamed all P#num tags to L[#num] where #num is a number
-	• Removed language lines 23 and 42 as they were unused
+	• Removed language line 42 as it was unused, also replaced line 23
 
 CHOOSE RANDOM SONG:
 
-	
+	• New button on UI next to Recently Played Songs label 
+	• Chooses a random song in the Recently Played Songs list and selects it to be the next song to be played.
+	• Clicking very quickly can mean that it can fail to work, this is LOTRO failing to run at the same speed as your clicking.
 
 MOD INSTALLER EXECUTABLE (BETA) (WINDOWS ONLY ATM):
 
@@ -122,7 +124,4 @@ NOTICES:
 		• keeps the previous colour used in the songs list for some reason
 	• Button images are not saved, they need to be reloaded manually 
 		• If I don't have a patch for this then hopefully it will be in 1.5
-
-TO DO STILL:
-
-	• New button "(R)" on UI next to Recently Played Songs label
+	• Changing Button Images Changes Window Position
