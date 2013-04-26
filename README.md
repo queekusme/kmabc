@@ -19,10 +19,11 @@ KMABC 1.4 - BETA RELEASE NOTES:
   <dd>You may need to rename the folder to "QueekusPlugins" without quotes else you will not be able to test in game.</dd>
 </dl>
 
-IMPORTANT: 
-
-	• Should you initiate a pull request, I will severely scrutinise what you have changed/added before even considering a merger and should it not fit my personal (will not be publicly released) criteria then it will be refused!
-	• Should I merge one of your pull requests, you will be given credit for whatever you add/change. (Depending on what it is depends on what I’ll credit you with)
+<dl>
+  <dt>IMPORTANT: </dt>
+  <dd>Should you initiate a pull request, I will severely scrutinise what you have changed/added before even considering a merger and should it not fit my personal (will not be publicly released) criteria then it will be refused!</dd>
+  <dd>Should I merge one of your pull requests, you will be given credit for whatever you add/change. (Depending on what it is depends on what I’ll credit you with)</dd>
+</dl>
 
 1.4 RELEASE CONTENT:
 --------------------
